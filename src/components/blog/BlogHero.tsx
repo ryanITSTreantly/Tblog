@@ -14,7 +14,7 @@ export default function BlogHero({ post }: BlogHeroProps) {
         <div className="flex items-center gap-3 text-[12px] text-light-text mb-12 uppercase tracking-[0.2em] font-bold">
           <Link to="/" className="hover:text-bright transition-colors">Home</Link>
           <span className="text-lime/50">/</span>
-          <Link to="/blog" className="hover:text-bright transition-colors">Blog</Link>
+          <Link to="/" className="hover:text-bright transition-colors">Blog</Link>
           <span className="text-lime/50">/</span>
           <span className="text-forest">{post.categories[0]}</span>
         </div>

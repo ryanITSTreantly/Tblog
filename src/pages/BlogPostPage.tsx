@@ -19,7 +19,7 @@ export default function BlogPostPage() {
   const post = mockPosts.find((p) => p.slug === slug);
 
   if (!post) {
-    return <Navigate to="/blog" replace />;
+    return <Navigate to="/" replace />;
   }
 
   const relatedPosts = mockPosts.filter(p => p.slug !== post.slug).slice(0, 3);

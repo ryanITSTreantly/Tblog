@@ -89,7 +89,7 @@ export default function BlogListing() {
           <section className="mb-24">
             <div className="grid grid-cols-1 lg:grid-cols-12 bg-light-card border border-border rounded-md overflow-hidden group hover:shadow-hover transition-all duration-300">
               <Link 
-                to={`/blog/${featuredPost.slug}`}
+                to={`/${featuredPost.slug}`}
                 className="lg:col-span-7 relative aspect-video lg:aspect-auto overflow-hidden"
               >
                 <img 
@@ -108,7 +108,7 @@ export default function BlogListing() {
                 <div className="section-label mb-4 w-fit">
                   {featuredPost.categories[0]}
                 </div>
-                <Link to={`/blog/${featuredPost.slug}`}>
+                <Link to={`/${featuredPost.slug}`}>
                   <h2 className="text-[24px] md:text-h2 font-bold text-charcoal mb-4 md:mb-6 leading-tight group-hover:text-forest transition-colors">
                     {featuredPost.title}
                   </h2>
@@ -128,7 +128,7 @@ export default function BlogListing() {
                     <span className="text-light-text text-[12px] md:text-[13px] font-medium">{featuredPost.publishDate} · {featuredPost.readTime} read</span>
                   </div>
                 </div>
-                <Link to={`/blog/${featuredPost.slug}`} className="btn-primary w-fit text-[13px] md:text-[14px] px-6 md:px-8 py-3 md:py-4">
+                <Link to={`/${featuredPost.slug}`} className="btn-primary w-fit text-[13px] md:text-[14px] px-6 md:px-8 py-3 md:py-4">
                   Read Article <ArrowRight size={18} />
                 </Link>
               </div>
@@ -218,13 +218,13 @@ export default function BlogListing() {
               <h3 className="text-[28px] font-bold text-charcoal mb-2">Explore by Topic</h3>
               <p className="text-mid-gray">Find the specific insights you need to grow your business.</p>
             </div>
-            <Link to="/blog" className="text-bright font-bold uppercase tracking-widest text-[14px] hover:underline">View All Topics →</Link>
+            <Link to="/" className="text-bright font-bold uppercase tracking-widest text-[14px] hover:underline">View All Topics →</Link>
           </div>
           <div className="flex flex-wrap gap-4">
             {categories.map((cat) => (
               <Link 
                 key={cat.slug} 
-                to={`/blog?category=${cat.slug}`}
+                to={`/?category=${cat.slug}`}
                 className="px-6 py-3 bg-light-gray rounded-pill text-forest font-bold uppercase text-[12px] tracking-widest hover:bg-bright hover:text-white transition-all shadow-sm"
               >
                 {cat.name} ({cat.count})
