@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/blog/:path*",
-      "destination": "https://blog.yourdomain.com/:path*"
+      "destination": "https://blog.treantly.com/:path*"
     },
     {
       "source": "/(.*)",
