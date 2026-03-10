@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/blog/:path*",
+      "destination": "https://blog.yourdomain.com/:path*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
