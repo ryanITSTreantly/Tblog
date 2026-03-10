@@ -9,7 +9,7 @@ interface CornerstoneCardProps {
 export default function CornerstoneCard({ post }: CornerstoneCardProps) {
   return (
     <Link 
-      to={`/blog/${post.slug}`}
+      to={`/${post.slug}`}
       className="group flex flex-col bg-white border border-border rounded-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2"
     >
       <div className="relative aspect-[16/9] overflow-hidden">

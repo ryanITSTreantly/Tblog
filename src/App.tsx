@@ -11,9 +11,11 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/blog" replace />} />
-        <Route path="/blog" element={<BlogListing />} />
-        <Route path="/blog/:slug" element={<BlogPostPage />} />
+        <Route path="/" element={<BlogListing />} />
+        <Route path="/:slug" element={<BlogPostPage />} />
+        {/* Redirect old /blog routes to new structure */}
+        <Route path="/blog" element={<Navigate to="/" replace />} />
+        <Route path="/blog/:slug" element={<Navigate to="/:slug" replace />} />
       </Routes>
     </Router>
   );

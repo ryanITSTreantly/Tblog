@@ -26,10 +26,10 @@ export default function Navigation() {
     { name: 'How It Works', href: '#' },
     { name: 'Pricing', href: '#' },
     { name: 'FAQ', href: '#' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'Blog', href: '/' },
   ];
 
-  const isBlogPage = location.pathname.startsWith('/blog');
+  const isBlogPage = location.pathname === '/' || location.pathname.startsWith('/');
 
   return (
     <nav

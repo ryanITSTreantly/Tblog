@@ -40,7 +40,7 @@ export default function Footer() {
               <li><Link to="#" className="hover:text-lime transition-colors">Testimonials</Link></li>
               <li><Link to="#" className="hover:text-lime transition-colors">How It Works</Link></li>
               <li><Link to="#" className="hover:text-lime transition-colors">Pricing</Link></li>
-              <li><Link to="/blog" className="hover:text-lime transition-colors">Blog</Link></li>
+              <li><Link to="/" className="hover:text-lime transition-colors">Blog</Link></li>
               <li><Link to="#" className="hover:text-lime transition-colors">FAQ</Link></li>
               <li><Link to="#" className="hover:text-lime transition-colors">Book a Call</Link></li>
             </ul>

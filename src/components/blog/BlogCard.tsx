@@ -9,7 +9,7 @@ interface BlogCardProps {
 export default function BlogCard({ post }: BlogCardProps) {
   return (
     <Link 
-      to={`/blog/${post.slug}`}
+      to={`/${post.slug}`}
       className="bg-light-card border border-border rounded-md p-6 flex flex-col h-full group transition-all duration-300 hover:shadow-hover hover:-translate-y-[5px] hover:border-forest"
       aria-label={`Read: ${post.title}`}
       role="article"
